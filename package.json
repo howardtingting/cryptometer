@@ -1,0 +1,38 @@
+{
+  "name": "cryptometer",
+  "version": "1.0.0",
+  "description": "Hashing API; an exploration of cryptographic hashing and encryption functions",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start:dev": "nodemon -r dotenv/config server.js dotenv_config_path=./.env",
+    "start:prod": "nodemon -r dotenv/config server.js dotenv_config_path=./.env-prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/howardtingting/hashbabbler.git"
+  },
+  "keywords": [
+    "cryptography",
+    "hashing",
+    "encryption",
+    "decryption",
+    "security"
+  ],
+  "author": "Howard Ting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/howardtingting/hashbabbler/issues"
+  },
+  "homepage": "https://github.com/howardtingting/hashbabbler#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "morgan": "^1.10.0",
+    "typescript": "^4.4.3",
+    "typescript-eslint-parser": "^22.0.0"
+  }
+}

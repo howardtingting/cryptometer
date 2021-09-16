@@ -1,0 +1,9 @@
+GENERAL PACKAGES:
+production (npm i {package-name}):
+express
+
+dev (npm i -D {package-name}):
+morgan
+typescript
+
+PROJECT-SPECIFIC PACKAGES:
