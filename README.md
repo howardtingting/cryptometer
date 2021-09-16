@@ -1,25 +1,24 @@
 hashbabbler
 ========
 
-[![NPM Package][npm]][npm-url]
-[![Build Size][build-size]][build-size-url]
-[![NPM Downloads][npm-downloads]][npmtrends-url]
-[![Language Grade][lgtm]][lgtm-url]
-
 #### String Hashing API ####
 
-API to hash strings.
+API to hash strings via different hashing algorithms (e.g. md, sha, etc.)
 
-### Usage ###
+### Usage Demo ###
 
-1. git clone <URL>
-#####In Project Folder#####
+##### In Terminal #####
+1. git clone https://github.com/howardtingting/hashbabbler.git
+
+##### In Project Folder #####
 2. npm install
 3. npm run start:dev
-#####Sample fetch from browser#####
+##### Sample fetch from browser #####
 ```javascript
 const input = "Value to be hashed";
 
+//To call other hashing functions, replace hash/md5 with hash/${fn}
+//example: fetch("http://localhost:3000/api/v1/hash/sha1", ...
 const hashVal = fetch("http://localhost:3000/api/v1/hash/md5", {
   //...
   body: { input: input }
@@ -31,3 +30,7 @@ const hashVal = fetch("http://localhost:3000/api/v1/hash/md5", {
   //error handling
 });
 ```
+
+### The Real API ###
+
+##### ...in progress... #####

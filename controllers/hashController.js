@@ -4,6 +4,7 @@ validFns = {"md5": true, "sha1": true, "sha2": true};
 
 exports.checkHashfn = (req, res, next, val) => {
   const hashfnStr = req.params.hashfn;
+  req.body.input = req.body.input ? req.body.input : 'default string';
   if (!(hashfnStr in validFns)) {
     console.log("failed hashfn")
     return res.status(404).json({
@@ -24,6 +25,6 @@ exports.hash = (req, res) => {
     message: `hash function ${hashfnStr} called`,
     body: req.body,
     hashfn: req.params.hashfn,
-    hashVal: hashVal
+    hash: hashVal
   });
 }
