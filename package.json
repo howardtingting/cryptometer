@@ -1,5 +1,5 @@
 {
-  "name": "cryptometer",
+  "name": "Hashbabbler",
   "version": "1.0.0",
   "description": "Hashing API; an exploration of cryptographic hashing and encryption functions",
   "main": "server.js",
@@ -27,11 +27,13 @@
   "homepage": "https://github.com/howardtingting/hashbabbler#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node-gyp": "^8.2.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
     "typescript": "^4.4.3",
     "typescript-eslint-parser": "^22.0.0"
   }

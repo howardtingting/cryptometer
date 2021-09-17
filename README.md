@@ -13,6 +13,13 @@ API to hash strings via different hashing algorithms (e.g. md, sha, etc.)
 ##### In Project Folder #####
 2. npm install
 3. npm run start:dev
+
+##### Alternative Installation (with Docker) #####
+2. docker-compose up -d --build #this runs the server immediately
+##### to shut down the server: #####
+3. docker-compose down -v
+
+
 ##### Sample fetch from browser #####
 ```javascript
 const input = "Value to be hashed";

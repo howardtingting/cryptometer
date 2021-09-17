@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  hashbabbler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hashbabbler
+    ports:
+      - "3000:3000"
+      - "5001:5000"
+    networks:
+      - isolation-network
+networks:
+  isolation-network:
+    driver: bridge
