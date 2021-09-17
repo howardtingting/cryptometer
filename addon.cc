@@ -1,4 +1,7 @@
 #include <node.h>
+#include "cpp_srcs/md5.h"
+
+MD5 md5;
 
 namespace demo {
 
@@ -17,7 +20,7 @@ const char* ToCString(const String::Utf8Value& value) {
   return *value ? *value : "<string conversion failed>";
 }
 
-void md5(const FunctionCallbackInfo<Value>& args) {
+void md5_fn(const FunctionCallbackInfo<Value>& args) {
 
   Isolate* isolate = args.GetIsolate();
 
@@ -37,9 +40,9 @@ void md5(const FunctionCallbackInfo<Value>& args) {
   }
 
   String::Utf8Value str(args[0]);
-  const char* md5HashVal = ToCString(str);
- //     args[0].As<Number>()->Value() + args[1].As<Number>()->Value();
- // Local<Number> num = Number::New(isolate, value);
+  const char* md5Input = ToCString(str);
+  std::string md5HashStr = md5(md5Input);
+  const char* md5HashVal = &*md5HashStr.begin();
 
   args.GetReturnValue().Set(String::NewFromUtf8(isolate, md5HashVal));
 }
@@ -48,7 +51,7 @@ void CreateFunction(const FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = args.GetIsolate();
 
   Local<Context> context = isolate->GetCurrentContext();
-  Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, md5);
+  Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, md5_fn);
   Local<Function> fn = tpl->GetFunction(context).ToLocalChecked();
 
   // omit this to make it anonymous
