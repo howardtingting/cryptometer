@@ -3,4 +3,4 @@
 export builddir_name ?= ./build/.
 .PHONY: all
 all:
-	$(MAKE) addon
+	$(MAKE) sha3cc sha256cc sha1cc md5cc keccakcc crc32cc

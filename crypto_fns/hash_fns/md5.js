@@ -1,7 +1,7 @@
 //FOLLOWS the MD5 algorithm as derived from https://en.wikipedia.org/wiki/MD5#Algorithm
-const addon = require('../../build/Release/addon');
+const md5cc = require('../../build/Release/md5cc');
 
-const md5fn = addon();
+const md5fn = md5cc();
 
 const processInputStr = function(inputStr) {
   //Check inputStr is valid str

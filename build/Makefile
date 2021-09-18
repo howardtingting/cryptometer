@@ -303,8 +303,33 @@ $(obj).$(TOOLSET)/%.o: $(obj)/%.S FORCE_DO_CMD
 
 ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
     $(findstring $(join ^,$(prefix)),\
-                 $(join ^,addon.target.mk)))),)
-  include addon.target.mk
+                 $(join ^,crc32cc.target.mk)))),)
+  include crc32cc.target.mk
+endif
+ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
+    $(findstring $(join ^,$(prefix)),\
+                 $(join ^,keccakcc.target.mk)))),)
+  include keccakcc.target.mk
+endif
+ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
+    $(findstring $(join ^,$(prefix)),\
+                 $(join ^,md5cc.target.mk)))),)
+  include md5cc.target.mk
+endif
+ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
+    $(findstring $(join ^,$(prefix)),\
+                 $(join ^,sha1cc.target.mk)))),)
+  include sha1cc.target.mk
+endif
+ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
+    $(findstring $(join ^,$(prefix)),\
+                 $(join ^,sha256cc.target.mk)))),)
+  include sha256cc.target.mk
+endif
+ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
+    $(findstring $(join ^,$(prefix)),\
+                 $(join ^,sha3cc.target.mk)))),)
+  include sha3cc.target.mk
 endif
 
 quiet_cmd_regen_makefile = ACTION Regenerating $@

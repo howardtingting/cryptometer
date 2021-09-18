@@ -1,7 +1,7 @@
 //FOLLOWS the MD5 algorithm as derived from https://en.wikipedia.org/wiki/MD5#Algorithm
-const sha1cc = require('../../build/Release/sha1cc');
+const keccakcc = require('../../build/Release/keccakcc');
 
-const sha1fn = sha1cc();
+const keccakfn = keccakcc();
 
 const processInputStr = function(inputStr) {
   //Check inputStr is valid str
@@ -9,11 +9,11 @@ const processInputStr = function(inputStr) {
   return inputStr;
 }
 
-const sha1 = function(inputStr) {
+const keccak = function(inputStr) {
   //convert inputObj to str
   //if file, set up fs read, read string in chunks, concatenate, then hash
-  console.log(`Calling sha1 on \'${processInputStr(inputStr)}\'`);
-  return sha1fn(inputStr);
+  console.log(`Calling keccak on \'${processInputStr(inputStr)}\'`);
+  return keccakfn(inputStr);
 }
 
-module.exports = sha1;
+module.exports = keccak;

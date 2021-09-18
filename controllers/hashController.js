@@ -1,6 +1,14 @@
+console.log("seg?")
 const hash_fns = require('../crypto_fns/hash_fns/hash_fns.js');
-
-validFns = {"md5": true, "sha1": true, "sha2": true};
+console.log("seg")
+validFns = {
+  "md5": true,
+  "sha1": true,
+  "sha3": true,
+  "sha256": true,
+  "crc32": true,
+  "keccak": true
+};
 
 exports.checkHashfn = (req, res, next, val) => {
   const hashfnStr = req.params.hashfn;
