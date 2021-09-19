@@ -8,10 +8,11 @@ API to hash strings via different hashing algorithms (e.g. md, sha, etc.)
 
 ### Usage Demo ###
 
-##### 1. In Terminal #####
+##### In Terminal #####
 ```console
 user:~$ git clone https://github.com/howardtingting/hashbabbler.git
 user:~/Hashbabbler$ npm install
+user:~/Hashbabbler$ node-gyp configure build
 user:~/Hashbabbler$ npm run start:dev
 ```
 ```console
