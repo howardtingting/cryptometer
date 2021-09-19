@@ -1,3 +1,4 @@
+
 hashbabbler
 ========
 
@@ -7,18 +8,21 @@ API to hash strings via different hashing algorithms (e.g. md, sha, etc.)
 
 ### Usage Demo ###
 
-##### In Terminal #####
-1. git clone https://github.com/howardtingting/hashbabbler.git
+##### 1. In Terminal #####
+> $ git clone https://github.com/howardtingting/hashbabbler.git
+$ npm install
+$ npm run start:dev
 
-##### In Project Folder #####
-2. npm install
-3. npm run start:dev
+##### 2. Alternative (with Docker) #####
+> $ git clone https://github.com/howardtingting/hashbabbler.git
+$ docker-compose up -d --build #runs the server
+$ docker-compose down #shuts down the server
 
-##### Alternative Installation (with Docker) #####
-2. docker-compose up -d --build #this runs the server immediately
-##### to shut down the server: #####
-3. docker-compose down -v
+##### 3. Alternative (Pull image from Dockerhub) #####
+> $ docker pull howardtingting/hashbabbler
+$ docker run --name hashbabble -d -p 3000:3000 howardtingting/hashbabbler
 
+See https://hub.docker.com/repository/docker/howardtingting/hashbabbler
 
 ##### Sample fetch from browser #####
 ```javascript
@@ -40,4 +44,4 @@ const hashVal = fetch("http://localhost:3000/api/v1/hash/md5", {
 
 ### The Real API ###
 
-##### ...in progress... #####
+##### ...in progress; whitelisting for personal apps... #####

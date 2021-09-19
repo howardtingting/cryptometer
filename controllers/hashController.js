@@ -1,12 +1,10 @@
-console.log("seg?")
 const hash_fns = require('../crypto_fns/hash_fns/hash_fns.js');
-console.log("seg")
 validFns = {
   "md5": true,
   "sha1": true,
   "sha3": true,
   "sha256": true,
-  "crc32": true,
+  //"crc32": true,
   "keccak": true
 };
 
@@ -31,6 +29,7 @@ exports.prepareInput = (req, res, next, val) => {
 }
 
 exports.hash = (req, res) => {
+  //TODO: how to do request body with file object
   //whitelist req.params.hashfn values using middleware
   const hashfnStr = req.params.hashfn;
   const hashfn = hash_fns[hashfnStr];

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Ingress
+metadata:
+  name: hashbabbler-ingress
+spec:
+  tls:
+  - hosts:
+    - ${demo.hashbabbler.com}
+    secretName: hashbabbler-secret-tls
+  rules:
+  - host: ${demo.hashbabbler.come}
+    http:
+      paths:
+      - frontend:
+          serviceName: hashbabbler-service
+          servicePort: 3000
