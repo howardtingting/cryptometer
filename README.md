@@ -9,19 +9,22 @@ API to hash strings via different hashing algorithms (e.g. md, sha, etc.)
 ### Usage Demo ###
 
 ##### 1. In Terminal #####
-> $ git clone https://github.com/howardtingting/hashbabbler.git
-$ npm install
-$ npm run start:dev
-
+```console
+user:~$ git clone https://github.com/howardtingting/hashbabbler.git
+user:~/Hashbabbler$ npm install
+user:~/Hashbabbler$ npm run start:dev
+```
+```console
 ##### 2. Alternative (with Docker) #####
-> $ git clone https://github.com/howardtingting/hashbabbler.git
-$ docker-compose up -d --build #runs the server
-$ docker-compose down #shuts down the server
-
+user:~$ git clone https://github.com/howardtingting/hashbabbler.git
+user:~/Hashbabbler$ docker-compose up -d --build #runs the server
+user:~/Hashbabbler$ docker-compose down #shuts down the server
+```
+```console
 ##### 3. Alternative (Pull image from Dockerhub) #####
-> $ docker pull howardtingting/hashbabbler
-$ docker run --name hashbabble -d -p 3000:3000 howardtingting/hashbabbler
-
+user:~$ docker pull howardtingting/hashbabbler
+user:~$ docker run --name hashbabble -d -p 3000:3000 howardtingting/hashbabbler
+```
 See https://hub.docker.com/repository/docker/howardtingting/hashbabbler
 
 ##### Sample fetch from browser #####
