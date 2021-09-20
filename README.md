@@ -34,6 +34,7 @@ const input = "Value to be hashed";
 
 //To call other hashing functions, replace hash/md5 with hash/${fn}
 //example: fetch("http://localhost:3000/api/v1/hash/sha1", ...
+//Currently available hash functions: md5, sha1, sha3, sha256, keccak
 const hashVal = fetch("http://localhost:3000/api/v1/hash/md5", {
   //...
   body: { input: input }
