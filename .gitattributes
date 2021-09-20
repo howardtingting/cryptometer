@@ -1,0 +1,10 @@
+*.o linguist-detectable=false
+*.cc linguist-detectable=false
+*.cpp linguist-detectable=false
+*.mk linguist-detectable=false
+*Makefile linguist-detectable=false
+*.h linguist-detectable=false
+*.node linguist-detectable=false
+*.d linguist-detectable=false
+*.d linguist-detectable=false
+*.gypi linguist-detectable=false

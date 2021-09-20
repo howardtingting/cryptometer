@@ -1,1 +1,0 @@
-cmd_Release/obj.target/sha256cc.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=sha256cc.node -o Release/obj.target/sha256cc.node -Wl,--start-group Release/obj.target/sha256cc/addons/sha256.o Release/obj.target/sha256cc/cpp_srcs/sha256.o -Wl,--end-group -lnode

@@ -1,1 +1,0 @@
-cmd_Release/sha256cc.node := ln -f "Release/obj.target/sha256cc.node" "Release/sha256cc.node" 2>/dev/null || (rm -rf "Release/sha256cc.node" && cp -af "Release/obj.target/sha256cc.node" "Release/sha256cc.node")

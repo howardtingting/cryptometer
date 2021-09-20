@@ -1,1 +1,0 @@
-cmd_Release/obj.target/sha3cc.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=sha3cc.node -o Release/obj.target/sha3cc.node -Wl,--start-group Release/obj.target/sha3cc/addons/sha3.o Release/obj.target/sha3cc/cpp_srcs/sha3.o -Wl,--end-group -lnode

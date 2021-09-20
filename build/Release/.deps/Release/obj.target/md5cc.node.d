@@ -1,1 +1,0 @@
-cmd_Release/obj.target/md5cc.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=md5cc.node -o Release/obj.target/md5cc.node -Wl,--start-group Release/obj.target/md5cc/addons/md5.o Release/obj.target/md5cc/cpp_srcs/md5.o -Wl,--end-group -lnode

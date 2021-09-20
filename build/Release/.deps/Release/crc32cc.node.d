@@ -1,1 +1,0 @@
-cmd_Release/crc32cc.node := ln -f "Release/obj.target/crc32cc.node" "Release/crc32cc.node" 2>/dev/null || (rm -rf "Release/crc32cc.node" && cp -af "Release/obj.target/crc32cc.node" "Release/crc32cc.node")

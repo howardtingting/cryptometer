@@ -1,1 +1,0 @@
-cmd_Release/obj.target/keccakcc.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=keccakcc.node -o Release/obj.target/keccakcc.node -Wl,--start-group Release/obj.target/keccakcc/addons/keccak.o Release/obj.target/keccakcc/cpp_srcs/keccak.o -Wl,--end-group -lnode
