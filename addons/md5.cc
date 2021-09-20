@@ -1,5 +1,5 @@
 #include <node.h>
-#include "../cpp_hashlibs/md5.h"
+#include "../cpp_srcs/md5.h"
 
 MD5 md5;
 

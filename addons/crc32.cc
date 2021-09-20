@@ -1,5 +1,5 @@
 #include <node.h>
-#include "../cpp_hashlibs/crc32.h"
+#include "../cpp_srcs/crc32.h"
 
 CRC32 crc32;
 

@@ -1,5 +1,5 @@
 #include <node.h>
-#include "../cpp_hashlibs/sha256.h"
+#include "../cpp_srcs/sha256.h"
 
 SHA256 sha256;
 

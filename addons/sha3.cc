@@ -1,5 +1,5 @@
 #include <node.h>
-#include "../cpp_hashlibs/sha3.h"
+#include "../cpp_srcs/sha3.h"
 
 SHA3 sha3;
 

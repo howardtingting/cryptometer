@@ -4,7 +4,7 @@ Release/obj.target/md5cc/addons/md5.o: ../addons/md5.cc \
  /usr/include/nodejs/deps/v8/include/v8-version.h \
  /usr/include/nodejs/deps/v8/include/v8config.h \
  /usr/include/nodejs/deps/v8/include/v8-platform.h \
- /usr/include/nodejs/src/node_version.h ../addons/../cpp_hashlibs/md5.h
+ /usr/include/nodejs/src/node_version.h ../addons/../cpp_srcs/md5.h
 ../addons/md5.cc:
 /usr/include/nodejs/src/node.h:
 /usr/include/nodejs/deps/v8/include/v8.h:
@@ -12,4 +12,4 @@ Release/obj.target/md5cc/addons/md5.o: ../addons/md5.cc \
 /usr/include/nodejs/deps/v8/include/v8config.h:
 /usr/include/nodejs/deps/v8/include/v8-platform.h:
 /usr/include/nodejs/src/node_version.h:
-../addons/../cpp_hashlibs/md5.h:
+../addons/../cpp_srcs/md5.h:

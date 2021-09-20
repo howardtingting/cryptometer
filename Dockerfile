@@ -17,10 +17,10 @@ RUN npm install --force
 
 RUN npm clean-install
 
-CMD ["node-gyp configure build"]
+CMD ["node-gyp", "configure", "build"]
 
 COPY . /hashbabbler
 
 EXPOSE 3000
 
-CMD [ "npm", "run", "start:dev" ]
+CMD [ "npm", "run", "start:docker" ]

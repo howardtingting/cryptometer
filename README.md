@@ -13,7 +13,7 @@ API to hash strings via different hashing algorithms (e.g. md, sha, etc.)
 user:~$ git clone https://github.com/howardtingting/hashbabbler.git
 user:~/Hashbabbler$ npm install
 user:~/Hashbabbler$ node-gyp configure build
-user:~/Hashbabbler$ npm run start:dev
+user:~/Hashbabbler$ npm start
 ```
 ```console
 ##### 2. Alternative (with Docker) #####

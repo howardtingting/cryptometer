@@ -4,7 +4,7 @@ Release/obj.target/crc32cc/addons/crc32.o: ../addons/crc32.cc \
  /usr/include/nodejs/deps/v8/include/v8-version.h \
  /usr/include/nodejs/deps/v8/include/v8config.h \
  /usr/include/nodejs/deps/v8/include/v8-platform.h \
- /usr/include/nodejs/src/node_version.h ../addons/../cpp_hashlibs/crc32.h
+ /usr/include/nodejs/src/node_version.h ../addons/../cpp_srcs/crc32.h
 ../addons/crc32.cc:
 /usr/include/nodejs/src/node.h:
 /usr/include/nodejs/deps/v8/include/v8.h:
@@ -12,4 +12,4 @@ Release/obj.target/crc32cc/addons/crc32.o: ../addons/crc32.cc \
 /usr/include/nodejs/deps/v8/include/v8config.h:
 /usr/include/nodejs/deps/v8/include/v8-platform.h:
 /usr/include/nodejs/src/node_version.h:
-../addons/../cpp_hashlibs/crc32.h:
+../addons/../cpp_srcs/crc32.h:

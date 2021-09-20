@@ -4,7 +4,7 @@ Release/obj.target/sha1cc/addons/sha1.o: ../addons/sha1.cc \
  /usr/include/nodejs/deps/v8/include/v8-version.h \
  /usr/include/nodejs/deps/v8/include/v8config.h \
  /usr/include/nodejs/deps/v8/include/v8-platform.h \
- /usr/include/nodejs/src/node_version.h ../addons/../cpp_hashlibs/sha1.h
+ /usr/include/nodejs/src/node_version.h ../addons/../cpp_srcs/sha1.h
 ../addons/sha1.cc:
 /usr/include/nodejs/src/node.h:
 /usr/include/nodejs/deps/v8/include/v8.h:
@@ -12,4 +12,4 @@ Release/obj.target/sha1cc/addons/sha1.o: ../addons/sha1.cc \
 /usr/include/nodejs/deps/v8/include/v8config.h:
 /usr/include/nodejs/deps/v8/include/v8-platform.h:
 /usr/include/nodejs/src/node_version.h:
-../addons/../cpp_hashlibs/sha1.h:
+../addons/../cpp_srcs/sha1.h:

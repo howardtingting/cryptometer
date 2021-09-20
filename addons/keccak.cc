@@ -1,5 +1,5 @@
 #include <node.h>
-#include "../cpp_hashlibs/keccak.h"
+#include "../cpp_srcs/keccak.h"
 
 Keccak keccak;
 

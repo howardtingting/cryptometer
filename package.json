@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "nodemon server.js",
-    "start:dev": "nodemon -r dotenv/config server.js dotenv_config_path=./.env-files/dev",
+    "start": "nodemon -r dotenv/config server.js dotenv_config_path=./.env-files/dev",
+    "start:docker": "nodemon -r dotenv/config server.js dotenv_config_path=./.env-files/docker",
     "start:prod": "nodemon -r dotenv/config server.js dotenv_config_path=./.env-files/prod"
   },
   "repository": {

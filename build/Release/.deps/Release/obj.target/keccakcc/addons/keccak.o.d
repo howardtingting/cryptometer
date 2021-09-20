@@ -4,8 +4,7 @@ Release/obj.target/keccakcc/addons/keccak.o: ../addons/keccak.cc \
  /usr/include/nodejs/deps/v8/include/v8-version.h \
  /usr/include/nodejs/deps/v8/include/v8config.h \
  /usr/include/nodejs/deps/v8/include/v8-platform.h \
- /usr/include/nodejs/src/node_version.h \
- ../addons/../cpp_hashlibs/keccak.h
+ /usr/include/nodejs/src/node_version.h ../addons/../cpp_srcs/keccak.h
 ../addons/keccak.cc:
 /usr/include/nodejs/src/node.h:
 /usr/include/nodejs/deps/v8/include/v8.h:
@@ -13,4 +12,4 @@ Release/obj.target/keccakcc/addons/keccak.o: ../addons/keccak.cc \
 /usr/include/nodejs/deps/v8/include/v8config.h:
 /usr/include/nodejs/deps/v8/include/v8-platform.h:
 /usr/include/nodejs/src/node_version.h:
-../addons/../cpp_hashlibs/keccak.h:
+../addons/../cpp_srcs/keccak.h:
